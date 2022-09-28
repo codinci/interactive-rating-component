@@ -37,24 +37,6 @@ section {
     flex-direction: column;
 }
 
-/* .rate--state {
-    display: none;
-} */
-
-h2 {
-    color: var(--neutral-white);
-    font-weight: 700;
-    font-size: 2rem;
-    margin: 0 1em;
-}
-
-.card {
-    width: 300px;
-    margin: 35em auto;
-    background-color: var(--neutral-dark-blue);
-    border-radius: 2em;
-}
-
 button.icon--button {
     margin: 1.5em;
     padding: .5em;
@@ -63,53 +45,31 @@ button.icon--button {
     border-radius: 50%;
 }
 
-.rating--statement p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 1em 1.5em;
+h2 {
+    color: var(--neutral-white);
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 1em;
 }
 
-.ratings {
+fieldset {
+    border: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-.ratings button{
-    display: block;
+input {
+    font-size: 1.5rem;
     width: 2.4em;
     height: 2.4em;
-    padding: .3em;
     background-color: var(--neutral-dark-blue);
     color: var(--neutral-medium-grey);
     border-radius: 50%;
     border-color: var(--neutral-dark-blue);
-    font-size: 1.5rem;
     cursor: pointer;
 }
 
-
-
-.ratings button:active {
-    background-color: var(--primary-orange);
-    color: var(--neutral-white);
-}
-
-.ratings button:visited {
-    background-color: var(--neutral-light-grey);
-    color: var(--neutral-white);
-}
-
-.submit:hover {
-    background-color: var(--neutral-white);
-    color: var(--primary-orange);
-}
-
-.submit:active {
-    background-color: var(--neutral-white);
-    color: var(--primary-orange);
-}
-
-button.submit {
+input[type='submit'] {
     margin: 1em;
     padding: .2em;
     border-color: var(--primary-orange);
@@ -121,8 +81,37 @@ button.submit {
     display: block;
     width: 90%;
     text-align: center;
-    cursor: pointer;
+    text-transform: uppercase;
 }
+
+.active {
+    background-color: var(--neutral-medium-grey);
+    color: var(--neutral-white);
+}
+input:hover {
+    background-color: var(--primary-orange);
+    color: var(--neutral-white);
+}
+
+input[type='submit']:hover {
+    background-color: var(--neutral-white);
+    color: var(--primary-orange);
+    border-color: var(--neutral-white);
+}
+.card {
+    width: 300px;
+    margin: 35em auto;
+    background-color: var(--neutral-dark-blue);
+    border-radius: 2em;
+}
+
+.rating--statement p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1em 1.5em;
+}
+
+
 
 .thank--you {
     display: none;
