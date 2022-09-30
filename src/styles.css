@@ -38,30 +38,42 @@ section {
 }
 
 button.icon--button {
-    margin: 1.5em;
+    margin: 1.5em .8em;
     padding: .5em;
     background-color: var(--neutral-dark-blue);
     border-color: var(--neutral-dark-blue);
     border-radius: 50%;
 }
 
+h1 {
+    font-size: 2rem;
+    color: var(--neutral-white);
+    margin: .5em;
+}
+
 h2 {
     color: var(--neutral-white);
     font-weight: 700;
     font-size: 2rem;
-    margin: 0 1em;
+    margin: 0 .8em;
+}
+
+form {
+    padding-bottom: 2em;
 }
 
 fieldset {
     border: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 2.5em;
+    margin-bottom: 4em;
 }
 
 input {
     font-size: 1.5rem;
-    width: 2.4em;
-    height: 2.4em;
+    width: 3.2em;
+    height: 3.2em;
     background-color: var(--neutral-dark-blue);
     color: var(--neutral-medium-grey);
     border-radius: 50%;
@@ -88,6 +100,7 @@ input[type='submit'] {
     background-color: var(--neutral-medium-grey);
     color: var(--neutral-white);
 }
+
 input:hover {
     background-color: var(--primary-orange);
     color: var(--neutral-white);
@@ -97,10 +110,12 @@ input[type='submit']:hover {
     background-color: var(--neutral-white);
     color: var(--primary-orange);
     border-color: var(--neutral-white);
+
 }
+
 .card {
-    width: 300px;
-    margin: 35em auto;
+    width: 365px;
+    margin: 15em auto;
     background-color: var(--neutral-dark-blue);
     border-radius: 2em;
 }
@@ -108,21 +123,59 @@ input[type='submit']:hover {
 .rating--statement p {
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 1em 1.5em;
+    margin: 1em 1.2em;
 }
 
-
+.rate--state{
+    display: block;
+}
 
 .thank--you {
-    display: none;
+    display: block;
 }
 
+.thankyou--image {
+    display: block;
+    margin: 1em auto;
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+
+.rating--result {
+    border-radius: 1.5em;
+    display: block;
+    margin: 0 auto;
+    padding: .5em;
+    width: 60%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-orange);
+    background-color: var(--neutral-medium-grey);
+    border-color: var(--neutral-medium-grey);
+}
+
+.gratitude--message {
+    font-size: 1.5rem;
+    color: var(--neutral-medium-grey);
+    text-align: center;
+    margin: 2.5em .8em;
+    padding-bottom: 2em;
+}
 
 .attribution {
-    font-size: 11px;
+    font-size: 1.5rem;
     text-align: center;
+    color: var(--neutral-medium-grey);
 }
 
 .attribution a {
+    text-decoration: none;
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:375px) {
+    .card {
+        width: 315px;
+    }
+
 }
