@@ -9,13 +9,15 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="stylesheet" href="./src/styles.css">
 
+        <script type="text/javascript" src="./src/index.js" defer></script>
+
         <title>Frontend Mentor | Interactive rating component</title>
 
     </head>
 
     <body>
         <!-- Rating state start -->
-        <section class="rate--state">
+        <section id="rating" class="rate--state">
             <div class="card">
                 <button class="icon--button"><img src="./images/icon-star.svg" alt="Star icon"></button>
                 <div class="rating--statement">
@@ -24,25 +26,25 @@
                     <p>Please let us know how we did with your support request. All feedback is appreciated
                         to help us improve our offering!</p>
                 </div>
-                <form class="rating--form">
+                <form id="rating_form" name="rating_form" class="rating--form">
                     <fieldset>
-                        <input id="1" value="1" type="button">
-                        <input id="2" value="2" type="button">
-                        <input id="3" value="3" type="button">
-                        <input id="4" value="4" type="button">
-                        <input id="5" value="5" type="button">
+                        <input id="1" class="rating--input" value="1" type="button">
+                        <input id="2" class="rating--input" value="2" type="button">
+                        <input id="3" class="rating--input" value="3" type="button">
+                        <input id="4" class="rating--input" value="4" type="button">
+                        <input id="5" class="rating--input" value="5" type="button">
                     </fieldset>
-                    <input type="submit" value="Submit">
+                    <input id="submitBtn" type="submit" value="Submit">
                 </form>
             </div>
         </section>
 
         <!-- Thank you state start -->
-        <section class="thank--you">
+        <section id="response" class="thank--you">
             <div class="card">
                 <img class="thankyou--image" src="./images/illustration-thank-you.svg" alt="Mobile rating taken">
                 <div class="rating--result">
-                    <p>You selected 4 out of 5</p>
+                    <p id="result">You selected 4 out of 5</p>
                 </div>
                 <div class="gratitude--message">
                     <h1>Thank you!</h1>
@@ -52,6 +54,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Attribution footer -->
         <div class="attribution">
             <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
                     Mentor</a>.</span>

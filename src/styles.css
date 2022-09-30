@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
-
+/* root elements */
 :root {
     /* colors */
     --primary-orange: hsl(25, 97%, 53%);
@@ -28,6 +28,8 @@ body {
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
 }
+
+/* tag selectors */
 
 section {
     display: flex;
@@ -60,6 +62,11 @@ h2 {
 
 form {
     padding-bottom: 2em;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 fieldset {
@@ -96,11 +103,6 @@ input[type='submit'] {
     text-transform: uppercase;
 }
 
-.active {
-    background-color: var(--neutral-medium-grey);
-    color: var(--neutral-white);
-}
-
 input:hover {
     background-color: var(--primary-orange);
     color: var(--neutral-white);
@@ -110,9 +112,9 @@ input[type='submit']:hover {
     background-color: var(--neutral-white);
     color: var(--primary-orange);
     border-color: var(--neutral-white);
-
 }
 
+/* class selectors */
 .card {
     width: 365px;
     margin: 15em auto;
@@ -120,24 +122,17 @@ input[type='submit']:hover {
     border-radius: 2em;
 }
 
+/* rating-state class selector */
+
 .rating--statement p {
-    font-size: 1.5rem;
-    font-weight: 400;
     margin: 1em 1.2em;
 }
 
-.rate--state{
-    display: block;
-}
-
-.thank--you {
-    display: block;
-}
+/* thank-you-state class selectors */
 
 .thankyou--image {
     display: block;
-    margin: 1em auto;
-    padding-top: 4em;
+    margin: 4em auto 2em auto;
     padding-bottom: 1em;
 }
 
@@ -159,8 +154,16 @@ input[type='submit']:hover {
     color: var(--neutral-medium-grey);
     text-align: center;
     margin: 2.5em .8em;
-    padding-bottom: 2em;
 }
+
+ /* active class selector for input */
+
+.active {
+    background-color: var(--neutral-medium-grey);
+    color: var(--neutral-white);
+}
+
+/* attribution class selector */
 
 .attribution {
     font-size: 1.5rem;
@@ -173,9 +176,10 @@ input[type='submit']:hover {
     color: hsl(228, 45%, 44%);
 }
 
+/* media query for mobile */
+
 @media (max-width:375px) {
     .card {
         width: 315px;
     }
-
 }
