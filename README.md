@@ -79,7 +79,7 @@ Would like to add form validation on clicking submission button.
 ## Author
 
 - Frontend Mentor - [codinci](https://www.frontendmentor.io/profile/codinci)
-- Github - [codinci](https://www.twitter.com/yourusername)
+- Github - [codinci](https://github.com/codinci)
 
 ## Acknowledgments
 
