@@ -23,6 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // function on submitting form
     ratingForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        console.log('Hello');
-    })
-})
+        
+        // change display style
+        ratingSection.style.display = 'none';
+        responseSection.style.display = 'block';
+
+        // retrieve value of selected input based on whether its active
+        Array.from(ratingInput).forEach(input => {
+            if (input.classList.contains('active')) {
+                const responseValue = input.value;
+                response.textContent = `You selected ${responseValue} out of 5`;
+            }
+        });
+    });
+});
